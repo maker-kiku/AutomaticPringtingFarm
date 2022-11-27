@@ -1,2 +1,2 @@
 # AutomaticPringtingFarm
-2023_AutomaticPringtingFarm
+2023_AutomaticPrintingFarm
