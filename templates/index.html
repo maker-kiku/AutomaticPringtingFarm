@@ -1,0 +1,17 @@
+<!--이 부분에 block의 윗 부분이 들어갑니다.-->
+
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Prusa Test</h1>
+<form action="{% url 'index' %}" method="POST">
+    {% csrf_token %}
+    <button type="submit" name="down">테스트</button>
+    <br>M105 : {{rxData}}
+</form>
+
+{% endblock %}
+
+<!--이 부분에 block의 아랫 부분이 들어갑니다.-->
+
+
