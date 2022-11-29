@@ -2,7 +2,7 @@ import serial
 
 # serialport = serial.Serial("/dev/cu.usbserial-11410", 115200, timeout=3)
 # serialport = serial.Serial("/dev/cu.usbserial-A907NDP7", 115200, timeout=3)
-serialport = serial.Serial("/dev/cu.usbmodem11301", 115200, timeout=3)
+serialport = serial.Serial("/dev/cu.usbmodem1134101", 115200, timeout=3)
 
 for index in range(0, 14):
     print("RX data: " + serialport.readline().decode("utf-8")) 

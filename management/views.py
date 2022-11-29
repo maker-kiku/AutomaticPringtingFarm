@@ -21,16 +21,16 @@ def index(request):
                 print(str(count) + " : " + serial_port[count])
                 prusa_port.append(serial.Serial(serial_port[count], 115200, timeout=3))
 
-            while True:
-                # TX (Transmit)로 송신할 데이터 입력 받기
-                rxData = prusa_port[0].readline().decode("utf-8")
+                while True:
+                    # TX (Transmit)로 송신할 데이터 입력 받기
+                    rxData = prusa_port[0].readline().decode("utf-8")
 
-                if rxData:
-                    print("RX data: " + rxData)
-                    continue
+                    if rxData:
+                        print("RX data: " + rxData)
+                        continue
 
-                else:   
-                    break
+                    else:   
+                        break
 
         return render(request, 'index.html')
     
